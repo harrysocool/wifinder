@@ -31,7 +31,7 @@ proc.wait()
 for kid in myKids.iterkeys():
 	for device in allDevices:
 		if device.get('MAC') == kid:
-			filename = "/Users/harrysocool/Desktop/" + myKids.get(kid) + ".present"
+			filename = "./" + myKids.get(kid) + ".present"
 			f = open(filename,'w')
 			f.close()
 
