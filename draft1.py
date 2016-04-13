@@ -21,4 +21,4 @@ for host in nm.all_hosts():
     # print('----------------------------------------------------')
     # print('Host : %s (%s)' % (host, nm[host].hostname()))
     # print('State : %s' % nm[host].state())
-    print(nm[host])
+    print(nm[host]['vendor'])
