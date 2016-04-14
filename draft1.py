@@ -17,6 +17,10 @@ except:
 nm = nmap.PortScanner()
 nm.scan(hosts='192.168.0.1/24', arguments='-n -sP -PE -T5')
 
+localtime = time.asctime(time.localtime(time.time()))
+print('============ {0} ============'.format(localtime))
+    # system time
+
 for host in nm.all_hosts():
     # print('----------------------------------------------------')
     # print('Host : %s (%s)' % (host, nm[host].hostname()))
